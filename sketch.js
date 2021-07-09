@@ -12,6 +12,10 @@ sleep = loadAnimation("images/sleep.png");
 
 function setup() {
   createCanvas(800,700);
+ b = createSprite(400,350,800,700);
+ b.addAnimation("background",bg);
+ b.scale = 0.9;
+ 
   astronaut = createSprite(300,230);
   astronaut.addAnimation("sleeping",sleep);
   astronaut.scale = 0.1;
